@@ -18,17 +18,18 @@ public class Quiz {
     }
 
     public void start() {
-        Scanner scanner = new Scanner(System.in);
-        for (Question q : questions) {
-            System.out.println(q.getText());
-            String response = scanner.nextLine();
-            if (q.checkAnswer(response)) {
-                System.out.println("Correct!");
-                score++;
-            } else {
-                System.out.println("Wrong.");
+        try (Scanner scanner = new Scanner(System.in)) {
+            for (Question q : questions) {
+                System.out.println(q.getText());
+                String response = scanner.nextLine();
+                if (q.checkAnswer(response)) {
+                    System.out.println("Correct!");
+                    score++;
+                } else {
+                    System.out.println("Wrong.");
+                }
             }
+            System.out.println("Final Score: " + score + "/" + questions.size());
         }
-        System.out.println("Final Score: " + score + "/" + questions.size());
     }
 }

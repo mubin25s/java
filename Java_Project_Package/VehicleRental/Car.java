@@ -7,4 +7,8 @@ public class Car extends Vehicle {
         super(licensePlate, dailyRate);
         this.doors = doors;
     }
+
+    public int getDoors() {
+        return doors;
+    }
 }

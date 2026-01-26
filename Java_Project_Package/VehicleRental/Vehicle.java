@@ -9,6 +9,10 @@ public class Vehicle {
         this.dailyRate = dailyRate;
     }
 
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
     public double calculateRentalCost(int days) {
         return dailyRate * days;
     }

@@ -12,4 +12,8 @@ public class Patient {
     public String getName() {
         return name;
     }
+
+    public int getAge() {
+        return age;
+    }
 }

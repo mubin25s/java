@@ -1,7 +1,5 @@
 package ATM;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         ATM atm = new ATM(1000.0);

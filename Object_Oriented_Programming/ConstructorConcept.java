@@ -17,7 +17,7 @@ class Book {
     Book(String title, String author) {
         this.title = title;
         this.author = author;
-
+    }
 
     void displayDetails() {
         System.out.println("Book: " + title + " by " + author);
